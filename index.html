@@ -36,18 +36,20 @@
       <form>
         <div class="form-group">
           <label for="exampleInputEmail">Your E-mail</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
         </div>
         <div class="form-group">
           <label for="exampleInputSubject">Subject</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Type subject here">
+          <input type="text" class="form-control" id="subject" placeholder="Type subject here" required>
         </div>
         </div>
         <div class="form-group">
           <label for="exampleForTextarea">Message Body</label>
-          <textarea class="form-control" id="textarea" rows="3" placeholder="Type message text here"></textarea>
+          <textarea class="form-control" id="body" rows="3" placeholder="Type message text here"></textarea>
         </div>
-        <button class="btn btn-primary">Submit</button>
+        <div class="col text-center">
+          <button class="btn btn-primary">Submit</button>
+        </div>
       </form>
     </section>
   </aside>
@@ -103,30 +105,30 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-circle fa-stack-2x text-danger"></i>
+            <i class="fa fab fa-html5 fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">E-Commerce</h4>
+          <h4 class="service-heading">HTML</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
             quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-circle fa-stack-2x text-info"></i>
+            <i class="fa fa-css3 fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">CSS</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+            quo inventore harum ex
+            magni, dicta impedit.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-dark"></i>
             <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
+          <h4 class="service-heading">Web Developer</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
             quo inventore harum ex
             magni, dicta impedit.</p>
@@ -151,13 +153,12 @@
     </div>
   </section>
 
-
   <!-- Me -->
   <section class="bg-light" id="me" style="padding: 0px;">
     <div class="row">
       <div class="col-sm-4">
         <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+          <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
           <h4>Lior Avshalomov</h4>
           <p class="text-muted">FullStack Developer</p>
           <ul class="list-inline social-buttons">
@@ -193,8 +194,6 @@
       directly. I'll come back to you within
       a matter of hours to help you.</p>
   </section>
-
-
 
   <!-- Footer -->
   <footer>
@@ -236,7 +235,7 @@
   </footer>
 
   <!-- Portfolio Modals -->
-  <div class="proj-modal"></div>
+  <div class="portfolio-modal"></div>
 
 
   <!-- Bootstrap core JavaScript -->
@@ -248,13 +247,11 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
+  <script src="js/gallery.service.js"></script>
+  <script src="js/gallery.controller.js"></script>
   <script src="js/ca-gallery.js"></script>
   <script src="js/offCanvas.js"></script>
-  <script src="js/gallery.controller.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/gallery.service.js"></script>
-
-
 </body>
 
 </html>

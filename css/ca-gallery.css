@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: rgb(238, 233, 233);
+    background: #222222;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -767,4 +767,12 @@ fieldset[disabled] .btn-xl:hover {
 
 .pointer {
     cursor: pointer;
+}
+
+form {
+    color: white;
+}
+
+form.btn-primary {
+    text-align: center;
 }
