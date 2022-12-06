@@ -17,6 +17,6 @@ $("form").submit(function () {
     var elSubject = $('#subject').val()
     var elBody = $('#body').val()
 
-    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${elMail}&su=${elSubject}&body=${elBody}`)
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=lioravshlomov300@gmail.com&su=${elSubject}&body=${'My mail: ' + elMail + `%0A` + elBody}`)
 });
 
